@@ -1,2 +1,5 @@
 *.o
 qdl
+
+.idea/
+cmake-build-debug/
