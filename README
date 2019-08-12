@@ -9,8 +9,22 @@ Usage:
 
 Building
 ========
-In order to build the project you need libxml2 headers and libraries, found in
-e.g. the libxml2-dev package.
+In order to build the project you need libxml2 and libusb headers and libraries, found in
+e.g. the libxml2-dev and libusb package.
 
 With this installed run:
   make
+
+for macos user:
+
+  brew install libusb pkg-config
+  make
+or use cmake:
+  cmake .
+  make
+
+INSTALL:
+  make install
+
+for M01 usage:
+  unzip M01_AE....zip && cd output && qdl --debug --storage emmc ./prog_emmc_firehose_8996_ddr.elf rawprogram_unsparse.xml patch0.xml
